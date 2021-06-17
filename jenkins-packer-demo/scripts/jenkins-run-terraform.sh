@@ -1,5 +1,7 @@
 #!/bin/bash
 set -ex
+#SET command to set or unset values of shell options and positional parameters
+#Display commands and their arguments as they are executed.
 AWS_REGION="eu-west-1"
 cd jenkins-packer-demo
 S3_BUCKET=`aws s3 ls --region $AWS_REGION |grep terraform-state |tail -n1 |cut -d ' ' -f3`
