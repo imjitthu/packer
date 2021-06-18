@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# volume setup
+# volume setup: vgchange command activates or deactivates one or more volume groups
 vgchange -ay
 
 DEVICE_FS=`blkid -o value -s TYPE ${DEVICE}`
